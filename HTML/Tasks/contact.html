@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      h2,
+      p {
+        margin: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+      }
+
+      ul li {
+        float: left;
+      }
+
+      ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="contact">
+      <center>
+        <h1>Contact Page</h1>
+      </center>
+    </section>
+
+    <section style="padding: 50px;">
+      <form action="#" method="post">
+        <label for="name">Full Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="3"
+          aria-describedby="nameHint"
+        />
+
+        <br /><br />
+
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          aria-describedby="emailHint"
+        />
+
+        <br /><br />
+
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="6"
+          aria-describedby="passwordHint"
+        />
+   
+        <br /><br />
+
+        <label for="confirm">Confirm Password:</label><br />
+        <input
+          type="password"
+          id="confirm"
+          name="confirm_password"
+          required
+          minlength="6"
+          aria-describedby="confirmHint"
+        />
+
+        <br /><br />
+
+        <label for="phone">Phone:</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          required
+          pattern="[0-9]{10}"
+          aria-describedby="phoneHint"
+          placeholder="1234567890"
+        />
+        <br /><br />
+
+        <fieldset>
+          <legend>Gender</legend>
+
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+        </fieldset>
+        <br />
+
+        <label for="country">Country:</label><br />
+        <select
+          id="country"
+          name="country"
+          required
+          aria-describedby="countryHint"
+        >
+          <option value="">-- Select Country --</option>
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+          <option value="canada">Canada</option>
+        </select>
+        <br /><br />
+
+        <input
+          type="checkbox"
+          id="terms"
+          name="terms"
+          required
+          aria-describedby="termsHint"
+        />
+        <label for="terms">I agree to the terms and conditions</label>
+        <br /><br />
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+  </body>
+</html>

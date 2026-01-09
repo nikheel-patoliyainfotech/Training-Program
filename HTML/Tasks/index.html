@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A portfolio website showcases your work, skills, and achievements, creating a professional online presence to attract clients or employers."
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      h2,
+      p {
+        margin: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+      }
+
+      nav ul li {
+        float: left;
+      }
+
+      nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <center>
+        <h1>Home Page</h1>
+        <figure>
+          <img src="assets/image1.jpeg" alt="my photo" width="500px" />
+          <figcaption>THis is my Photo.</figcaption>
+        </figure>
+      </center>
+    </section>
+
+    <section id="home">
+      <center>
+        <h1>Lazy loading on image</h1>
+        <figure>
+          <img
+            src="assets/image.jpg"
+            alt="my photo"
+            loading="lazy"
+            width="500px"
+          />
+          <figcaption>THis is my Photo.</figcaption>
+        </figure>
+      </center>
+    </section>
+
+    <section>
+      <center>
+        <video poster="assets/poster.png" width="640" controls>
+          <source src="assets/sempal.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <audio controls>
+          <source src="assets/sample-9s.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </center>
+    </section>
+
+    <section>
+      <center>
+
+        <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/UB1O30fR-EE?si=AUK6KwL664HyO1lY"
+        title="YouTube video player"
+        frameborder="0"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        ></iframe>
+      </center>
+    </section>
+  </body>
+</html>
