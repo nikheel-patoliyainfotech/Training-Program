@@ -1,0 +1,145 @@
+:root {
+  --bg-page: #f4f6f8;
+  --bg-header: #1f2933;
+  --bg-sidebar: #111827;
+  --bg-content: #ffffff;
+
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-light: #e5e7eb;
+  --text-muted: #9ca3af;
+
+  --accent-primary: #2563eb;
+  --accent-secondary: #38bdf8;
+
+  --border-light: #e5e7eb;
+
+  --fs-name: 32px;
+  --fs-role: 16px;
+  --fs-heading: 24px;
+  --fs-body: 16px;
+  --fs-small: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-page);
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.main-con {
+  
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: var(--bg-content);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+    position: sticky;
+  background-color: var(--bg-header);
+  padding: 25px 30px;
+}
+
+.header h1 {
+  font-size: var(--fs-name);
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.header p {
+  font-size: var(--fs-heading);
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.resume-body {
+  display: flex;
+}
+
+.sidebar {
+  /* border: 2px solid red; */
+  width: 30%;
+  padding: 25px;
+  background-color: var(--bg-sidebar);
+  color: var(--text-light);
+  float: left;
+}
+
+.sidebar h2 {
+  font-size: var(--fs-heading);
+  margin-bottom: 10px;
+  color: var(--accent-secondary);
+  border-bottom: 2px solid var(--border-light);
+
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-bottom: 25px;
+  color: var(--text-light);
+}
+
+.sidebar li {
+  font-size: var(--fs-body);
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+.sidebar i {
+  padding: 10px;
+}
+
+.sidebar ul a {
+  text-decoration: none;
+  color: var(--text-light);
+}
+
+.main-content {
+  width: 70%;
+  padding: 30px;
+  float: left;
+}
+
+.section {
+    margin-bottom: 20px;
+    /* border: 1px solid red; */
+}
+
+.section h2 {
+  color: var(--accent-primary);
+  border-bottom: 2px solid var(--border-light);
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+}
+
+
+.section h3{
+padding: 10px 0 0 0; 
+}
+
+.section div li{
+margin-left: 20px;
+}
+
+.section p a{
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: var(--text-primary);
+}
+
+.section dt{
+    font-weight: 600;
+}
+
+.section dd{
+    padding-left: 40px;
+}
